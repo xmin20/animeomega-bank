@@ -1,0 +1,58 @@
+/* إعدادات الخطوط والألوان الأساسية لعالم أوميغا */
+:root {
+    --bg-black: #0b0c10;       /* الأسود العميق للخلفية */
+    --bg-dark: #1f2833;        /* رمادي داكن للقوائم والصناديق */
+    --omega-blue: #45f3ff;     /* أزرق أوميغا المضيء */
+    --omega-purple: #8a2be2;   /* البنفسجي السحري للندرة */
+    --omega-gold: #c5a059;     /* الذهبي الفاخر للعملات والـ VIP */
+    --text-white: #ffffff;
+    --text-gray: #c5c6c7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-black);
+    color: var(--text-white);
+    overflow-x: hidden;
+}
+
+/* تأثير كروت الأنمي المشعة */
+.omega-card {
+    background: linear-gradient(145deg, #151a22, #1f2833);
+    border: 1px solid rgba(69, 243, 255, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.omega-card:hover {
+    border-color: var(--omega-blue);
+    box-shadow: 0 0 15px rgba(69, 243, 255, 0.4);
+    transform: translateY(-5px);
+}
+
+/* أزرار اللعبة التفاعلية */
+.btn-omega {
+    background: linear-gradient(90deg, var(--omega-purple), #4a148c);
+    color: white;
+    border: 2px solid var(--omega-blue);
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+.btn-omega:hover {
+    background: linear-gradient(90deg, var(--omega-blue), var(--omega-purple));
+    box-shadow: 0 0 10px var(--omega-blue);
+    color: var(--bg-black);
+}
