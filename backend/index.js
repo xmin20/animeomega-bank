@@ -7,7 +7,8 @@ const PORT = 5000;
 
 app.use(cors());
 app.use(express.json());
-
+const botRouter = require('./bot');
+app.use('/api/bot', botRouter);
 // 1. فحص حالة السيرفر
 app.get('/api/status', (req, res) => {
     res.json({ status: "online", message: "سيرفر أوميغا بنك جاهز ومتصل بقاعدة البيانات! 🏦✨" });
